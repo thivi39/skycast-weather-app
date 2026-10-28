@@ -9,6 +9,7 @@
        Add the title of the webpage.
        The title should be: SkyCast — Weather Dashboard
   -->
+  <title>SkyCast — Weather Dashboard</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +18,6 @@
 
   <div class="page">
 
-```
 <!-- Header -->
 <header class="site-header">
 
@@ -27,6 +27,7 @@
          Add a logo for the website.
          Use the weather emoji 🌤️ inside a div with the class "logo".
     -->
+    <div class="logo">🌤️</div>
 
     <div>
       <!-- TODO 3:
@@ -34,15 +35,16 @@
            Add a paragraph below it with the text:
            "Weather made simple"
       -->
+      <h1>SkyCast</h1>
+      <p>Weather made simple</p>
     </div>
 
   </div>
 
-  <!-- TODO 4:
-       Create a header badge using a div with the class "header-badge".
-       Display the text:
-       🌍 Live Weather
-  -->
+  <nav aria-label="Main navigation">
+    <a href="#currentCard">Current</a>
+    <a href="#forecast">Forecast</a>
+  </nav>
 
 </header>
 
@@ -149,7 +151,7 @@
 
 
   <!-- Forecast -->
-  <section class="forecast-section">
+  <section id="forecast" class="forecast-section">
 
     <div class="section-heading">
 
@@ -222,34 +224,20 @@
 <!-- Footer -->
 <footer class="site-footer">
 
-  <!-- TODO 18:
-       Create the footer brand.
+  <div class="footer-brand">
+    <span>🌤️</span>
+    <strong>SkyCast</strong>
+  </div>
 
-       Requirements:
-       - Use a div with class "footer-brand"
-       - Add the weather emoji 🌤️
-       - Add "SkyCast" using a <strong> element.
-  -->
-
-
-  <!-- TODO 19:
-       Add a paragraph containing:
-       "Simple, fast and reliable weather information."
-  -->
+  <p>Simple, fast and reliable weather information.</p>
 
 
   <div class="footer-bottom">
-
-    <!-- TODO 20:
-         Add two spans:
-         1. © 2026 SkyCast
-         2. Powered by Open-Meteo
-    -->
-
+    <span>© 2026 SkyCast</span>
+    <span>Powered by Open-Meteo</span>
   </div>
 
 </footer>
-```
 
   </div>
 
